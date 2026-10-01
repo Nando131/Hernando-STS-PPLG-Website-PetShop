@@ -16,7 +16,6 @@ export default function Navbar() {
                     Hernando Pet Shop
                 </Link>
 
-                {/* Tombol Hamburger (Khusus Layar HP) */}
                 <button
                     type="button"
                     className="hamburger-btn"
@@ -26,7 +25,6 @@ export default function Navbar() {
                     {isOpen ? '✕' : '☰'}
                 </button>
 
-                {/* Menu Mendatar (Desktop) */}
                 <nav className="desktop-menu">
                     <Link href="/dashboard" className="nav-link"> Dashboard</Link>
                     <Link href="/" className="nav-link">Katalog Produk</Link>
@@ -36,10 +34,8 @@ export default function Navbar() {
                 </nav>
             </div>
 
-            {/* Latar Belakang Gelap */}
             {isOpen && <div className="sidebar-backdrop" onClick={closeSidebar}></div>}
 
-            {/* Sidebar (Mobile) */}
             <aside className={`mobile-sidebar ${isOpen ? 'open' : ''}`}>
                 <div className="sidebar-header">
                     <span className="sidebar-title">Menu Pet Shop</span>
